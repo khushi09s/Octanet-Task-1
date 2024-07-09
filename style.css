@@ -23,7 +23,7 @@ html,body{
     position: relative;
     width: 100%;
     min-height: inherit;
-    background-color: rgba(0, 0, 0, 0.295);
+    background-color: rgba(0, 0, 0, 0.295);p[]
 }
 .text{
     display: flex;
@@ -41,7 +41,7 @@ html,body{
 }
 .text .image{
     background-image: url(https://images.unsplash.com/photo-1568454537842-d933259bb258?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGlraW5nfGVufDB8fDB8fHww);
-    /* background-color: blue;    */
+    /* background-color: blue; */
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -134,6 +134,14 @@ padding: 4vw 3vh;
 .b3 .overlay p{
     padding: 1.2vh;
 }
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 200%;
+        margin-left: initial;
+    }}
 @media(max-width:500px){
     .text{
         flex-direction: column;
@@ -145,5 +153,36 @@ padding: 4vw 3vh;
     .text .image{
         height: 200px;
         width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin: 10px;
+
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 .up{
+        min-height: 40vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
     }
 }
