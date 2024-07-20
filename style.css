@@ -23,7 +23,7 @@ html,body{
     position: relative;
     width: 100%;
     min-height: inherit;
-    background-color: rgba(0, 0, 0, 0.295);p[]
+    background-color: rgba(0, 0, 0, 0.295);
 }
 .text{
     display: flex;
